@@ -25,6 +25,12 @@
         <option value="0">Seleccione</option>
     </select>
 </div>
+<div>
+    <h3>Departamento</h3>
+    <select name="dep" id="dep">
+        <option value="0">Seleccione</option>
+    </select>
+</div>
 
 </body>
 </html>

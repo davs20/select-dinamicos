@@ -6,6 +6,14 @@ $(function() {
     $.post('continente.php').done(function(respuesta) {
             $('#continentes').html(respuesta);
     });
+
+    $("#pais").change(function () {
+        var id_pais=$(this).val();
+        $.post("departamentos.php",{id_pais:id_pais}).done(function(respuesta) {
+            $("#dep").html(respuesta);
+        });
+        
+    });
     
     $('#continentes').change(function() {
         var el_continente=$(this).val();
