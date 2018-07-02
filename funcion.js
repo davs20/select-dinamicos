@@ -14,6 +14,13 @@ $(function() {
         });
         
     });
+    $("#dep").change(function () {
+        var id_departamento=$(this).val();
+        $.post("municipio.php",{id_departamento:id_departamento}).done(function(respuesta) {
+            $("#mun").html(respuesta);
+        });
+        
+    });
     
     $('#continentes').change(function() {
         var el_continente=$(this).val();
